@@ -243,7 +243,7 @@ inline int DPDK::port_init(uint16_t port)
 		}
 
 	/* Enable RX in promiscuous mode for the Ethernet device. */
-	retval = rte_eth_promiscuous_enable(port);
+	/*retval = rte_eth_promiscuous_enable(port);
 	if ( retval != 0 )
 		{
 		reporter->Warning("Warning: Failed to set %u to promiscuous mode: %s\n", port,
@@ -253,7 +253,7 @@ inline int DPDK::port_init(uint16_t port)
 	reporter->Info("Monitoring DPDK port %u, queue %u, core %u\n", port, my_queue_num, rte_lcore_id());
 
 	return 0;
-	}
+	}*/
 
 /*
  * Called a single time by Zeek. This setups the top layer, with the abstraction layer, etc.
